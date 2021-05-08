@@ -1,4 +1,4 @@
-" vim-bootstrap 2021-05-08 16:48:41
+" vim-bootstrap 2021-05-08 16:53:14
 
 "*****************************************************************************
 "" Vim-Plug core
@@ -12,7 +12,7 @@ endif
 
 let g:vim_bootstrap_langs = "html,javascript,python,typescript"
 let g:vim_bootstrap_editor = "vim"				" nvim or vim
-let g:vim_bootstrap_theme = "codedark"
+let g:vim_bootstrap_theme = "dracula"
 let g:vim_bootstrap_frams = ""
 
 if !filereadable(vimplug_exists)
@@ -49,7 +49,7 @@ Plug 'dense-analysis/ale'
 Plug 'Yggdroot/indentLine'
 Plug 'editor-bootstrap/vim-bootstrap-updater'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
-Plug 'tomasiser/vim-code-dark'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 
 if isdirectory('/usr/local/opt/fzf')
@@ -166,7 +166,7 @@ set ruler
 set number
 
 let no_buffers_menu=1
-colorscheme codedark
+colorscheme dracula
 
 
 set mousemodel=popup
